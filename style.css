@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    width:100%;
+    min-height: 100vh;
+}
+
+.slide{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/************ HEADER/HOME **********/
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#home{
+    width: 100%;
+    min-height: 60vh;
+    z-index:70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/home.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.title{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    font-family: 'Kaushan Script', cursive;
+    color: #892f2e;
+    font-size: 70px;
+}
+
+.title h2{
+    font-family: 'Rokkitt', serif;
+    font-size: 45px;
+}
