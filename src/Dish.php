@@ -3,6 +3,8 @@ namespace App;
 
 class Dish{
 
+    use HTML\BootstrapCards;
+
     public function getURL(){
         return 'index.php?action=dish&id='.$this->id;
     }
@@ -19,10 +21,6 @@ class Dish{
 
     }
 
-    public function cards()
-    {
-
-    }
 }
 
 ?>

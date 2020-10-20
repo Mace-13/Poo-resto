@@ -22,11 +22,30 @@
     <?php
         include('template/home.php');
     ?>
-    <?php foreach($db->myQuery('SELECT * FROM dish', 'Dish') as $dish) : ?>
+    <div class="split"></div>
 
-            <div><?= $dish->BootstrapCards($dish->img,$dish->nom,$dish->type,$dish->getURL())?></div>
+    <div class="slide" id="best">
+
+        <div class="center">
+            <div class="titleBest">
+                <h1>So... What's new ? </h1>
+            </div>
+            <div class="new">
+                <?php foreach($db->myQuery('SELECT * FROM dish', 'Dish') as $dish) : ?>
+
+                    <div><?= $dish->BootstrapCards($dish->img,$dish->nom,$dish->prix,$dish->getURL())?></div>
 
 
-    <?php endforeach; ?>
+                <?php endforeach; ?>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
 </body>
 </html>
